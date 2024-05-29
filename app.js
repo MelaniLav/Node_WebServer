@@ -55,7 +55,7 @@ app.get('/generic', (req, res) => {
 app.get('/salidas', (req, res) => {
     res.render('salidas', {
         nombre: 'Melani Laveriano',
-        titulo: 'Curso de Node'
+        titulo: 'Curso de Node - SALIDAS'
     })
 });
 
