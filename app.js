@@ -52,6 +52,13 @@ app.get('/generic', (req, res) => {
     })
 });
 
+app.get('/salidas', (req, res) => {
+    res.render('salidas', {
+        nombre: 'Melani Laveriano',
+        titulo: 'Curso de Node'
+    })
+});
+
 app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/404.html');
 })
