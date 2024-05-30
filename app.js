@@ -59,6 +59,13 @@ app.get('/salidas', (req, res) => {
     })
 });
 
+app.get('/salidas', (req, res) => {
+    res.render('salidas', {
+        nombre: 'Melani Laveriano',
+        titulo: 'PRUEBAS'
+    })
+});
+
 app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/404.html');
 })
